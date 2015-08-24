@@ -1,0 +1,12 @@
+### File managed with puppet ###
+
+WT_SERVERNAME=<%= @service_name %>
+WT_ACCESS_LOG=<%= @log_file %>
+WT_IFACE=0.0.0.0
+WT_PORT=<%= @http_port %>
+<%- if @https -%>
+WT_HTTPS_IFACE=0.0.0.0 
+WT_HTTPS_PORT=<%= @https_port %>
+WT_SSL_CERT=<%= @cert_file %>
+WT_SSL_PRIV_KEY=<%= @priv_key_file %>
+<%- end -%>

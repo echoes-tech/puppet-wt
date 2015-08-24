@@ -1,0 +1,45 @@
+{
+  "name": "echoes-wt",
+  "version": "0.1.0",
+  "author": "Echoes Technologies",
+  "summary": "Puppet module to manage wt installation and configuration",
+  "license": "Apache-2.0",
+  "source": "https://github.com/echoes-tech/puppet-wt",
+  "project_page": "https://github.com/echoes-tech/puppet-wt",
+  "issues_url": "https://github.com/echoes-tech/puppet-wt/issues",
+  "tags": [
+    "witty",
+    "cpp",
+    "framework"
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "Debian",
+      "operatingsystemrelease": [
+        "6",
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "Ubuntu",
+      "operatingsystemrelease": [
+        "10.04",
+        "12.04",
+        "14.04"
+      ]
+    }
+  ],
+  "requirements": [
+    {
+      "name": "pe",
+      "version_requirement": "3.x"
+    },
+    {
+      "name": "puppet",
+      "version_requirement": "3.x"
+    }
+  ],
+  "dependencies": [
+    {"name":"puppetlabs/stdlib","version_requirement":">= 1.0.0"}
+  ]
+}
