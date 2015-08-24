@@ -13,9 +13,6 @@
     * [Setup requirements](#setup-requirements)
     * [Beginning with wt](#beginning-with-wt)
 4. [Usage - Configuration options and additional functionality](#usage)
-    * [Enable Wt Dashboard](#enable-wt-dashboard)
-    * [Add a check](#add-a-check)
-    * [Remove a check](#remove-a-check)
 5. [Reference - An under-the-hood peek at what the module is doing and how](#reference)
 6. [Limitations - OS compatibility, etc.](#limitations)
 7. [Development - Guide for contributing to the module](#development)
@@ -69,8 +66,6 @@ ToDo
 * wt::params: Sets parameter defaults per operating system.
 * wt::install: Handles the packages.
 * wt::config: Handles the configuration file.
-* wt::service: Handles the service.
-* wt::firewall: Handles the firewall configuration.
 
 #### Parameters
 
