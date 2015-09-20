@@ -40,7 +40,7 @@ then
   WT_SSL_PRIV_KEY_OPT="--ssl-private-key $WT_SSL_PRIV_KEY"
 fi
 
-DAEMON=<%= @binary_path %>/<%= @binary_name %>
+DAEMON=<%= @binary_path %>/<%= @service_name %>
 DAEMON_PATH=<%= @binary_path %>
 DAEMON_ARGS="$WT_SERVERNAME $WT_ACCESS_LOG --docroot . \
             $WT_IFACE $WT_PORT \

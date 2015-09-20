@@ -113,10 +113,6 @@ Tells Puppet whether OS package must be used. Valid option: boolean. Default val
 
 The following parameters are available in the `::wt::service` define:
 
-##### `binary_name`
-
-Specifies the name of the binary that will be launched. Valid options: string. Default value: undef
-
 ##### `binary_path`
 
 Specifies the path of the binary that will be launched. Valid options: path. Default value: undef
