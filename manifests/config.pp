@@ -23,7 +23,7 @@ class wt::config inherits wt {
     owner   => 0,
     group   => 0,
     mode    => '0600',
-    content => template('wt/wt_config.xml.erb'),
+    content => template("${module_name}/wt_config.xml.erb"),
   }
 
   file { '/etc/logrotate.d/wthttp':
@@ -31,6 +31,6 @@ class wt::config inherits wt {
       owner  => 0,
       group  => 0,
       mode   => '0644',
-      source => "puppet:///modules/${module_name}/wthttp.logrotate",
+      source => tempalte("${module_name}/wthttp.logrotate.erb"),
   }
 }
