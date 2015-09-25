@@ -6,7 +6,8 @@ class wt::params {
   $config_file       = "${config_dir}/wt_config.xml"
   $custom_properties = {}
   $libraries_path    = undef
-  $log_file          = '/var/log/wthttp.log'
+  $log_dir           = '/var/log/wt',
+  $log_filename      = 'wthttp.log'
   $log_config        = '* -debug'
   $package_ensure    = 'present'
   $package_name      = 'witty'

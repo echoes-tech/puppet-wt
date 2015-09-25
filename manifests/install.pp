@@ -26,4 +26,11 @@ class wt::install inherits wt {
       subscribe   => File['/usr/local/lib'],
     }
   }
+
+  file { $wt::log_dir:
+    ensure  => directory,
+    owner   => 0,
+    group   => 0,
+    mode    => '0755',
+  }
 }

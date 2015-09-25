@@ -81,9 +81,13 @@ Read more: http://www.webtoolkit.eu/wt/doc/reference/html/overview.html#config_g
 
 Tells Puppet where to find the Wt libraries if you do not want to use the package from your OS. Valid options: string. Default value: undef
 
-##### `log_file`
+##### `log_dir`
 
-Specifies where the Wt log file will be writter. Valid options: path. Default value: "/var/log/wthttp.log"
+Tells Puppet what Wt log directory to create. Valid options: path. Default value: '/var/log/wt'
+
+##### `log_filename`
+
+Tells Puppet what Wt log file to create. Valid options: string. Default value: 'wthttp.log'
 
 ##### `log_config`
 
@@ -133,9 +137,13 @@ Tells Puppet whether the Wt server must be start with https mode. Valid options:
 
 Specifies the https port of the Wt server. Valid options: integer >= 1. Default value: 443
 
-##### `log_file`
+##### `log_dir`
 
-Specifies where the Wt log file will be writter. Valid options: path. Default value: "/var/log/${service_name}"
+Tells Puppet what Wt log directory to create. Valid options: path. Default value: '/var/log/wt'
+
+##### `log_filename`
+
+Tells Puppet what Wt log file to create. Valid options: string. Default value: 'access.log'
 
 ##### `priv_key_file`
 
